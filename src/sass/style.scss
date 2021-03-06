@@ -1,0 +1,91 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+@import 'blocks/media';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    // display: block;
+    object-fit: cover;
+    margin: 0 auto;
+}
+body {
+    background: #f85032;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #e73827, #f85032)cover center;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #e73827, #f85032) cover center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+// #todo {
+//     width: 1140px;
+//     margin: 25px auto;
+//     background-color: white;
+//     min-height: 90vh;
+
+// }
+
+
+
+
+.mrg {
+    max-height: 15px;
+}
+
+.completed {
+    text-decoration: line-through;
+
+}
+
+.save {
+outline-style: none;
+ color: #181818;
+ transition: color 1s ease;
+ &:focus {
+    outline-style: none;
+ }
+}
+
+.hide {
+    display: none !important;
+}
+
+.todos {
+    li {
+        cursor: pointer;
+    }
+}
+
+.wrapper {
+    transition: 0.7 all;
+}
+
+#pencil {
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.save-red {
+    background: #F00000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #DC281E, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.save-green {
+    background: #029115;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0f9b0f, #029115);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0f9b0f, #029115); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
